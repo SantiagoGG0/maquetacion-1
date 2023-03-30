@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="es-CO">
 
 <head>
@@ -6,38 +6,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--esta etiqueta es usada para un sitio responsive-->
   <title>Mi primera web</title>
-  <link rel="icon" type="image/jpg" href="./image/MONO.jpg">
+  <link rel="icon" type="image/jpg" href="./image/MONO HD.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="./styles.css">     
+  <!-- maximo dos fuentes -->
 </head>
 
 <body>
   
   <header> <!-- Etiqueta encabezado-->
-    <img src="./image/MONO.jpg" alt ="Logo de la pagina">
+    <img src="./image/MONO HD.jpg" alt ="Logo de la pagina">
     <!-- (src)Source recuerso de imagenes -->
     <!-- (alt)Alternativa por si no se muestra lo deseado -->
-    <h1>Mi primera web </h1>
-    <nav>
-      <!--Generamos contenidod de Navegacion -->
-      <ul>
-        <!-- Lista ordenas o no ordenadas -->
-        <li>
-          <!-- Esto son los links de redireccion o hipervinculos -->
-          <a href="./page2.html" target = "_blank">Pagina 2</a> 
-        </li>
-      </ul>  
-      <ul>
-        <li>
-          <a href="https://www.google.com/" target="_blank">Google</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="https://www.twitch.tv/" target="_blank">Twitch</a>
-        </li>
-      </ul>
-    </nav>
+    <h1>Mi primera web</h1>
+    <div>
+      <span>
+        
+      </span>
+      <span>
+
+      </span>
+      <span>
+
+      </span>
+    </div>
+    <!-- Los estilos se sobreescriben por prioridad (En linea predomina) -->
   </header>
-    
+  <aside> <!--Menu o contenido aparte-->
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a> </li>
+          <!-- El # es usado para pruebas -->
+        <li> <a href="#">Docentes</a> </li>
+          
+        <li> <a href="#">Configuraciones</a> </li>
+      </ul>
+    </nav> 
+  </aside>
+  <main> <!-- main funcion para añadir el contenido-->
+
+    <section> 
+      <article> <!--Parte de la seccion-->
+       <h2>Docentes creados</h2>
+       <p> 20</p>
+      </article>
+      <article>
+        <h2>Docentes activos</h2>
+        <p>10</p>
+      </article>
+      <article>
+        <h2>Docentes inactivos</h2>
+        <p>10</p>
+      </article>
+   
+    </section>
+  </main>
+  <footer><!--Parte final de pagina-->
+    <p>Derechos reservados 2023 - Hecho con amor.</p>
+
+  </footer>
 </body>
 
 </html>
