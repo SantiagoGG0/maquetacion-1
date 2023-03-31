@@ -17,6 +17,7 @@ header{
     background-color:#00ffff;
     color: #000;
     padding: 10px;
+    z-index: 0;
  }
 /* el punto siempre debe de ir para las clases. */
 .logo{
@@ -35,8 +36,47 @@ header{
 .menu-btn span{ 
     display: block;
     width: 30px;
-    height: 15px;
-    background-color: #ffd700;
+    height: 5px;
     margin-bottom: 5px;
     border-radius: 3px;
+    background-color: #ffd700;
+}
+/* fin de estilos de bloque header */
+aside{
+    position: fixed;
+    top: 0;
+    left:-250px;
+    width: 250px;
+    height: 100%;
+    padding: 20px; 
+    z-index: 1;
+    background-color: #00ffff;
+    /* EL z-index nos sirve para sobreposicionar un elemento sobre otro. */   
+    color:#ffffff;
+    
+      /*Para las transiciones usamos lo siguiente  */
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    /* overflow = scroll */
+}
+aside.active{
+    left: 0;
+}
+nav ul{
+    padding: 0;
+    margin: 20px;
+}
+nav ul li{
+    margin-bottom: 10px;
+}
+/* Los selectores nos ayudan a tener mayor especificidad y esto es importante */
+nav ul li a{
+    color:#ffffff;
+    text-decoration: none;
+}
+/* TAREA:cuando pase por encima muestre una linea */
+/* PSEUDOCLASES */
+nav ul li>a:hover{
+    text-decoration: underline;
+    
 }
